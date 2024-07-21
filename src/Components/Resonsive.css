@@ -1,0 +1,27 @@
+/* making responsive for android devices */
+@media (max-width : 600px){
+    .NewsCart-Section{
+        width: 23vmax;
+    }
+    main{
+        gap: 4rem;
+        display: flex;
+        justify-content: center;
+        margin-left:1rem ;
+    }
+    
+}
+/* making responsive for android devices */
+@media (max-width : 412px){
+    .NewsCart-Section{
+        width: 40vmax;
+        height: 40vmax;
+    }
+    main{
+        gap: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
