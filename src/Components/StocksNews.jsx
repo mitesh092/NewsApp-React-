@@ -36,8 +36,10 @@ const getDescription = (response, value) => {
 const StocksNews = ({value}) => {
     const [newsimg, Setnewsimg] = useState("");
 
-    const Api_Key  = "xyz"//  replce your api key
-    const URL_stock_api = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${Api_Key}`
+    const apiKey = import.meta.env.VITE_NEWS_API_KEY;
+    const apiUrl = import.meta.env.VITE_NEWS_API_URL;
+
+    const URL_stock_api = `${apiUrl}${apiKey}`;
 
     useEffect(() => {
         // IFFE : imediate 
